@@ -1,0 +1,146 @@
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Bất Động Sản Thành Công - Tìm kiếm và mua bán bất động sản uy tín tại Việt Nam">
+    <meta name="theme-color" content="#3498db">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Bất Động Sản Thành Công</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Bất Động Sản Thành Công</h1>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>0358965708</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>congnt4u@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Tìm kiếm bất động sản mơ ước của bạn</h2>
+            <p>Chúng tôi cung cấp những căn nhà, căn hộ và biệt thự chất lượng cao tại Quận 7</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="container">
+            <h3>Bộ lọc tìm kiếm</h3>
+            <div class="filter-grid">
+                <div class="filter-group">
+                    <label>Phường</label>
+                    <select id="ward-filter">
+                        <option value="">Tất cả</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Diện tích (m²)</label>
+                    <select id="area-filter">
+                        <option value="">Tất cả</option>
+                        <option value="0-50">0-50m²</option>
+                        <option value="50-100">50-100m²</option>
+                        <option value="100-150">100-150m²</option>
+                        <option value="150+">Trên 150m²</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Giá (tỷ VNĐ)</label>
+                    <select id="price-filter">
+                        <option value="">Tất cả</option>
+                        <option value="0-5">0-5 tỷ</option>
+                        <option value="5-10">5-10 tỷ</option>
+                        <option value="10-15">10-15 tỷ</option>
+                        <option value="15-20">15-20 tỷ</option>
+                        <option value="20+">Trên 20 tỷ</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Số tầng</label>
+                    <select id="floor-filter">
+                        <option value="">Tất cả</option>
+                        <option value="1">1 tầng</option>
+                        <option value="2">2 tầng</option>
+                        <option value="3">3 tầng</option>
+                        <option value="4">4 tầng</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Số phòng ngủ</label>
+                    <select id="bedroom-filter">
+                        <option value="">Tất cả</option>
+                        <option value="1">1 phòng</option>
+                        <option value="2">2 phòng</option>
+                        <option value="3">3 phòng</option>
+                        <option value="4">4 phòng</option>
+                        <option value="5">5 phòng</option>
+                        <option value="6+">6+ phòng</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-actions">
+                <button id="reset-filters" class="btn-reset">Tất cả</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="properties">
+        <div class="container">
+            <h3>Danh sách bất động sản</h3>
+            <div id="properties-grid" class="properties-grid">
+                <!-- Properties will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Detail Modal -->
+    <div id="property-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Property details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Bất Động Sản Thành Công</h4>
+                    <p>Đơn vị uy tín trong lĩnh vực bất động sản tại TP.HCM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <p><i class="fas fa-phone"></i> 0358965708</p>
+                    <p><i class="fas fa-envelope"></i> congnt4u@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bất Động Sản Thành Công. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-new.js"></script>
+</body>
+</html>
