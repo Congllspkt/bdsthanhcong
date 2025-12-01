@@ -379,43 +379,51 @@ function showPropertyDetail(property) {
         // Show fallback images immediately
         modalImagesSection.innerHTML = `
             <div class="modal-image">
-                <img src="${imageFolder}1.jpg" alt="Property Image 1" 
+                <img src="${imageFolder}/1.jpg" alt="Property Image 1" 
                      onerror="this.src='https://via.placeholder.com/300x200?text=No+Image'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}2.jpg" alt="Property Image 2" 
+                <img src="${imageFolder}/2.jpg" alt="Property Image 2" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}3.jpg" alt="Property Image 3" 
+                <img src="${imageFolder}/3.jpg" alt="Property Image 3" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 4" 
+                <img src="${imageFolder}/4.jpg" alt="Property Image 4" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 5" 
+                <img src="${imageFolder}/5.jpg" alt="Property Image 5" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 6" 
+                <img src="${imageFolder}/6.jpg" alt="Property Image 6" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 7" 
+                <img src="${imageFolder}/7.jpg" alt="Property Image 7" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 8" 
+                <img src="${imageFolder}/8.jpg" alt="Property Image 8" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 9" 
+                <img src="${imageFolder}/9.jpg" alt="Property Image 9" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 10" 
+                <img src="${imageFolder}/10.jpg" alt="Property Image 10" 
+                     onerror="this.style.display='none'">
+            </div>
+            <div class="modal-image">
+                <img src="${imageFolder}/11.jpg" alt="Property Image 11" 
+                     onerror="this.style.display='none'">
+            </div>            
+			<div class="modal-image">
+                <img src="${imageFolder}/12.jpg" alt="Property Image 12" 
                      onerror="this.style.display='none'">
             </div>
         `;
