@@ -1,8 +1,8 @@
 // Embed data directly to avoid CORS issues
 const propertiesData = [
     {
-        "Đường": "Nguyễn Thị Thập",
-        "Phường": "Tân Phú",
+        "Đường": "Trần Xuân Soạn",
+        "Phường": "Tân Hưng",
         "Quận": "7",
         "Diện Tích": 80,
         "Giá": 8.0,
@@ -10,7 +10,7 @@ const propertiesData = [
         "Số tầng": 3,
         "Số phòng ngủ": 4,
         "số WC": 3,
-        "Hình ảnh": "img/1-Nhà phố-Nguyễn_Thị_Thập"
+        "Hình ảnh": "img/ND001"
     },
     {
         "Đường": "Lâm Văn Bền",
@@ -22,7 +22,7 @@ const propertiesData = [
         "Số tầng": 4,
         "Số phòng ngủ": 6,
         "số WC": 3,
-        "Hình ảnh": "img/2-Nhà phố-Lâm_Văn_Bền"
+        "Hình ảnh": "img/ND001"
     },
     {
         "Đường": "Huỳnh Tấn Phát",
@@ -34,7 +34,7 @@ const propertiesData = [
         "Số tầng": 3,
         "Số phòng ngủ": 5,
         "số WC": 4,
-        "Hình ảnh": "img/3-Biệt thự-Huỳnh_Tấn_Phát"
+        "Hình ảnh": "img/ND001"
     },
     {
         "Đường": "Nguyễn Văn Linh",
@@ -46,7 +46,7 @@ const propertiesData = [
         "Số tầng": 1,
         "Số phòng ngủ": 2,
         "số WC": 2,
-        "Hình ảnh": "img/4-Căn hộ-Nguyễn_Văn_Linh"
+        "Hình ảnh": "img/ND001"
     },
 
     {
@@ -59,7 +59,7 @@ const propertiesData = [
         "Số tầng": 4,
         "Số phòng ngủ": 4,
         "số WC": 3,
-        "Hình ảnh": "img/5-Nhà phố-Trần_Xuân_Soạn"
+        "Hình ảnh": "img/ND001"
         
     },
     {
@@ -72,7 +72,7 @@ const propertiesData = [
         "Số tầng": 2,
         "Số phòng ngủ": 6,
         "số WC": 5,
-        "Hình ảnh": "img/6-Biệt thự-Bùi_Văn_Ba"
+        "Hình ảnh": "img/ND001"
     
     },
     {
@@ -85,7 +85,7 @@ const propertiesData = [
         "Số tầng": 1,
         "Số phòng ngủ": 3,
         "số WC": 2,
-        "Hình ảnh": "img/7-Căn hộ-Lý_Thường_Kiệt"
+        "Hình ảnh": "img/ND001"
     },
     {
         "Đường": "Đoàn Văn Bơ",
@@ -97,7 +97,7 @@ const propertiesData = [
         "Số tầng": 3,
         "Số phòng ngủ": 5,
         "số WC": 4,
-        "Hình ảnh": "img/8-Nhà phố-Đoàn_Văn_Bơ"
+        "Hình ảnh": "img/ND001"
     },
     {
         "Đường": "Nguyễn Hữu Thọ",
@@ -109,7 +109,7 @@ const propertiesData = [
         "Số tầng": 1,
         "Số phòng ngủ": 1,
         "số WC": 1,
-        "Hình ảnh": "img/9-Căn hộ-Nguyễn_Hữu_Thọ"
+        "Hình ảnh": "img/ND001"
     },
     {
         "Đường": "Phạm Hùng",
@@ -121,7 +121,7 @@ const propertiesData = [
         "Số tầng": 4,
         "Số phòng ngủ": 4,
         "số WC": 3,
-        "Hình ảnh": "img/10-Nhà phố-Phạm_Hùng"
+        "Hình ảnh": "img/ND001"
     },
     {
         "Đường": "Hoàng Quốc Việt",
@@ -133,7 +133,7 @@ const propertiesData = [
         "Số tầng": 3,
         "Số phòng ngủ": 7,
         "số WC": 6,
-        "Hình ảnh": "img/11-Biệt thự-Hoàng_Quốc_Việt"
+        "Hình ảnh": "img/ND001"
     }
 ];
 
@@ -237,7 +237,7 @@ function displayProperties(properties) {
 function createPropertyCard(property, index) {
     // Get main image from property folder
     const imageFolder = property['Hình ảnh'];
-    const mainImage = `https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3`; // Default fallback
+    const mainImage = `${imageFolder}1.jpg`; // Default fallback
     
     // Try to get first available image
     getFirstAvailableImage(imageFolder).then(imagePath => {
@@ -379,15 +379,15 @@ function showPropertyDetail(property) {
         // Show fallback images immediately
         modalImagesSection.innerHTML = `
             <div class="modal-image">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 1" 
+                <img src="${imageFolder}1.jpg" alt="Property Image 1" 
                      onerror="this.src='https://via.placeholder.com/300x200?text=No+Image'">
             </div>
             <div class="modal-image">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 2" 
+                <img src="${imageFolder}2.jpg" alt="Property Image 2" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 3" 
+                <img src="${imageFolder}3.jpg" alt="Property Image 3" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
@@ -567,7 +567,7 @@ function formatPrice(price) {
 // Function to get first available image for property card
 async function getFirstAvailableImage(folderPath) {
     const commonFirstImages = [
-        'hinh_1.jpg'
+        '1.jpg'
     ];
     
     for (const imageName of commonFirstImages) {
@@ -575,8 +575,7 @@ async function getFirstAvailableImage(folderPath) {
         try {
             const response = await fetch(imagePath, { method: 'HEAD' });
             if (response.ok) {
-                // return imagePath;
-                return "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" ;
+                return imagePath;
             }
         } catch (error) {
             // Continue to next image
@@ -584,8 +583,7 @@ async function getFirstAvailableImage(folderPath) {
     }
     
     // Fallback
-    // return `${folderPath}/${commonFirstImages[0]}`;
-    return "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3";
+    return `${folderPath}/${commonFirstImages[0]}`;
 }
 
 // Show error message
